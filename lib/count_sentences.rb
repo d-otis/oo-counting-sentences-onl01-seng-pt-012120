@@ -17,7 +17,6 @@ class String
   def count_sentences
     delimiters = [".","?", "!"]
     if !self.empty? && self.size > 1
-      binding.pry
       split_sentences = self.split(Regexp.union(delimiters))
       split_sentences.delete_if {|el| el == ""}.count
     else
