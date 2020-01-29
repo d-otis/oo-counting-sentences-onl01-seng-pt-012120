@@ -20,7 +20,6 @@ class String
       binding.pry
       split_sentences = self.split(Regexp.union(delimiters))
       split_sentences.delete_if {|el| el == ""}.count
-      
     else
       0
     end
