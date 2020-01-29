@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    delimiters = []
+    delimiters = [".","?", "!"]
     if !self.empty? && self.size > 1
       split_sentences = self.split(".")
       
