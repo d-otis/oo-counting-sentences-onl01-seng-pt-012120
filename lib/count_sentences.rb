@@ -17,7 +17,7 @@ class String
   def count_sentences
     new_arr = []
     if !self.empty? && self.size > 1
-      split_sentences = self.split(".")
+      new_arr << split_sentences = self.split(".")
       split_sentences.each do |n|
             binding.pry
             if n.include?("!")
