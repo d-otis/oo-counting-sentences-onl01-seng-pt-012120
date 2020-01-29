@@ -19,6 +19,8 @@ class String
     if !self.empty? && self.size > 1
       split_sentences = self.split
       split_sentences.count
+    else
+      0
     end
   end
 end
