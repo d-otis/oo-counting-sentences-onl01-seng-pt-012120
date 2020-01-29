@@ -22,6 +22,8 @@ class String
             binding.pry
             if n.include?("!")
               n.split("!")
+            elsif n.include?("?")
+              n.split("?")
             else
             end
       end
