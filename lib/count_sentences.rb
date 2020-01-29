@@ -19,6 +19,10 @@ class String
       split_sentences = self.split(".")
       split_sentences.each do |n|
             binding.pry
+            if n.include?("!")
+              n.split("!")
+            else
+            end
       end
     else
       0
