@@ -19,6 +19,7 @@ class String
     if !self.empty? && self.size > 1
       binding.pry
       split_sentences = self.split(Regexp.union(delimiters))
+      split_sentences.delete_if {|el| el == ""}
       
     else
       0
