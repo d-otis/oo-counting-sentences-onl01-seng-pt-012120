@@ -19,13 +19,13 @@ class String
     if !self.empty? && self.size > 1
       split_sentences = self.split(".")
       split_sentences.each do |n|
-            binding.pry
-            if n.include?("!")
-              n.split("!")
-            elsif n.include?("?")
-              n.split("?")
-            else
-            end
+        binding.pry
+        if n.include?("!")
+          n.split("!")
+        elsif n.include?("?")
+          n.split("?")
+        else
+        end
       end
     else
       0
