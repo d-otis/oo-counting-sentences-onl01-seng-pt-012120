@@ -21,7 +21,7 @@ class String
       split_sentences.each do |n|
             binding.pry
             if n.include?("!")
-              n.split("!")
+              new_arr << n.split("!")
             elsif n.include?("?")
               n.split("?")
             else
