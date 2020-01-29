@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     binding.pry
-    if !self.empty? && self.size > 1
+    if !self.empty?
       split_sentences = self.split(".")
       split_sentences.count
     else
