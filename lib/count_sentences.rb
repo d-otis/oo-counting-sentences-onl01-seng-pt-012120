@@ -17,9 +17,7 @@ class String
   def count_sentences
     if !self.empty? && self.size > 1
       split_sentences = self.split(".")
-      binding.pry
       split_sentences.each do |n|
-        
       end
     else
       0
