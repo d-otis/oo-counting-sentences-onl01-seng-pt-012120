@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     binding.pry
+    if !self.empty? && self.count
     split_sentences = self.split
     split_sentences.count
   end
